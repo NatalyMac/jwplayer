@@ -51,6 +51,9 @@ function scheduleResponsiveRedraw() {
         views.forEach(view => {
             view.checkResized();
         });
+        widgets.forEach(widget => {
+            widget.updateBounds();
+        })
     });
 }
 
